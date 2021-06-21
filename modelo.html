@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Modelo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CineOtaku</h1>
+    </header>
+
+    <section>
+        <div>            
+            Escolha um horario:
+                <select name="horarios" id="horarioFilmes">
+                    <option value="10">10h</option>
+                    <option value="12">12h</option>
+                    <option value="14">14h</option>
+                    <option value="16">16h</option>
+                    <option value="18">18h</option>
+                    <option value="20">20h</option>
+                    <option value="22">22h</option>
+                </select>                
+        <br> 
+            Escolha um assento:
+                <select name="assentos" id="assentos">
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                    <option value="A5">A5</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                    <option value="B4">B4</option>
+                    <option value="B5">B5</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                    <option value="C4">C4</option>
+                    <option value="C5">C5</option>                    
+                </select>
+        <br>             
+        Escolha o tipo do ingresso:
+            <select name="ingresso" id="ingresso">
+                <option value="Inteira R$: 10 reais">Inteira: R$: 10 reais</option>
+                <option value="Meia R$: 05 reais">Meia: R$: 05 reais</option>
+            </select> 
+        <br>
+            <input type="button" value="Escolher" id="btn_consulta" onclick="consultar()">
+        </div>
+        
+        <p>Filmes:
+        <br>
+        <br>
+            <input type="radio" name="ckFilmes">
+            <label for="cdz">Os Cavaleiros do Zodíaco</label>
+        <br>
+        <br>
+            <input type="radio" name="ckFilmes">
+            <label for="dbz">Dragon Ball Z</label>
+        <br>
+        <br>
+            <input type="radio" name="ckFilmes">
+            <label for="naruto">Naruto The Last</label>
+        <br>
+        <br>
+            <input type="radio" name="ckFilmes">
+            <label for="avc">A viagem de Chihiro</label>  
+        </p>
+
+        <div id="div_msg"></div>
+
+        <div>
+            <img id="img_filmes" src="" alt="">
+        </div>      
+
+    </section>
+
+    <footer>&copy; capacitação T.I</footer>
+
+    <script src='script.js'></script>
+    
+</body>
+</html>
